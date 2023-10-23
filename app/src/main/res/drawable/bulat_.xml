@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" /> <!-- Ganti dengan warna latar belakang yang Anda inginkan -->
+    <size android:width="100dp" android:height="100dp" /> <!-- Sesuaikan dengan ukuran yang Anda inginkan -->
+    <corners android:radius="50dp" /> <!-- Setengah dari ukuran width/height untuk membuat bentuk lingkaran -->
+</shape>

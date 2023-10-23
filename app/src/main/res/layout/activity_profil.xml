@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profil">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/photoprofil"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:background="@drawable/profilegi"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
+        <LinearLayout
+            android:id="@+id/tombol"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/photoprofil"
+            android:orientation="horizontal">
+
+            <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="50dp"
+            android:onClick="settingOnClik"
+            android:background="@drawable/shape"
+            android:contentDescription="TODO"
+            android:src="@drawable/setting2"
+            tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,VisualLintBounds" />
+
+            <ImageButton
+                android:id="@+id/keluar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:onClick="keluarOnClik"
+                android:background="@drawable/shape"
+                android:contentDescription="TODO"
+                android:src="@drawable/logout"
+                tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,VisualLintBounds" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nametag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tombol"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="100dp"
+                android:layout_weight="1"
+                android:text="@string/setting"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="45dp"
+                android:layout_weight="1"
+                android:text="keluar"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

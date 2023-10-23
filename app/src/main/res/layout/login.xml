@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".LoginActivity">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/gambarlogin"
+        android:layout_width="310dp"
+        android:layout_height="257dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logingambar">
+    </View>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/gambarlogin"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/robo"
+        android:text="login"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColorHint="@color/white"
+        android:hint="@string/email"
+        android:importantForAutofill="auto"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        tools:ignore="TextFields,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColorHint="@color/white"
+        android:background="@android:color/transparent"
+        android:hint="@string/password"
+        android:importantForAutofill="auto"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        tools:ignore="TextFields,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/password"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/remember"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/tombollogin"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkbox"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/shape1"
+        android:contentDescription="@android:string/ok"
+        android:text="@string/login"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/tombolregister"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tombollogin"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/shape1"
+        android:contentDescription="@android:string/ok"
+        android:text="@string/register1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tombolregister"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/or"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="TextSizeCheck" />
+
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/other"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/googlebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/google"
+                android:onClick="openGoogle"
+                android:background="@drawable/shape1"
+                android:text="@string/login_with_google"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:iconPadding="18dp"></Button>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
+

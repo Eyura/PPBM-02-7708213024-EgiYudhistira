@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcome">
+
+    <ImageView
+        android:id="@+id/logohome"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="110dp"
+        android:background="@drawable/meta">
+    </ImageView>
+    <Button
+        android:id="@+id/LOGINP"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="700dp"
+        android:text="@string/login"
+        android:textSize="22sp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center" />
+
+</RelativeLayout>
